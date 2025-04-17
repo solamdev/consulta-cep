@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<Html>
+  <head> 
+    <link rel="stylesheet" href="style.css">
+    <TItle>SITE CONSULTADOE DE CEP</TItle>
+  </head>
+  <body>
+
+    <div class="div1">   
+        <h2>feito por LUCAS SCHEFFER</h2>
+
+        <button id="mudarTema"  class="btntema">
+            <img class="imgdark" id="lua" src="https://cdn-icons-png.flaticon.com/512/62/62510.png" alt="dark">
+        </button>
+    </div>
+
+    <form class="form" onsubmit="descobrir_cep(event)">
+      <div class="user-input">
+        <label for="rua">rua</label>
+        <input type="text" id="rua2" name="rua" placeholder="digite sua rua">
+        <label for="cidade">cidade</label>
+        <select id="select">
+            <option id="rs" value="RS">Porto Alegre</option>
+            <option id="sp" value="SP">São Paulo</option>
+            <option value="RJ">Rio de Janeiro</option>
+        </select>
+        <button type="submit">descobrir</button>
+        <button type="reset" onclick="hideForm()">limpar</button>
+        <a href="/index.html">voltar</a>
+      </div>
+
+      <div class="result hidden">
+       <label for="cep">cep</label>
+       <input id="cep2" readonly type="text">
+      </div>
+    </form>
+    
+    <script src="index.js"></script>
+  </body>
+  
+</Html>
