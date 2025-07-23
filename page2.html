@@ -7,6 +7,14 @@
   <body>
 
     <div class="div1">   
+      <button class="historico" >
+        <img class="icone-historico" src="https://cdn-icons-png.flaticon.com/512/61/61122.png" alt="historico">
+      </button>
+        <div class="btnLixo hidden" >
+        <button class="btnLixo2 " >
+          <img class="lixeira "  src="https://png.pngtree.com/png-vector/20240917/ourlarge/pngtree-trash-can-icon-png-image_13851979.png" alt="limpar historico">
+        </button>
+      </div>
         <h2>feito por LUCAS SCHEFFER</h2>
 
         <button id="mudarTema"  class="btntema">
@@ -15,8 +23,9 @@
     </div>
 
     <form class="form" onsubmit="descobrir_cep(event)">
-      <div class="user-input">
-        <label for="rua">rua</label>
+      <div class="user-input" >
+        <label for="rua">Rua</label>
+        <p class="erro hidden" >RUA Invalida</p>
         <input type="text" id="rua2" name="rua" placeholder="digite sua rua">
         <label for="cidade">cidade</label>
         <select class="select" id="select">
@@ -35,6 +44,13 @@
       </div>
     </form>
     
+      <div class="divHistorico hidden charge ">
+     <ul class="listCEP">
+     </ul>
+    </div>
+
+
+
     <script src="index.js"></script>
   </body>
   

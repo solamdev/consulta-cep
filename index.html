@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <Html>
   <head> 
+  
     <link rel="stylesheet" href="style.css">
     <TItle>SITE CONSULTADOE DE CEP</TItle>
     <meta charset="UTL-8">
@@ -9,6 +10,14 @@
   <body>
 
     <div class="div1">   
+      <button class="historico">
+        <img class="icone-historico" src="https://cdn-icons-png.flaticon.com/512/61/61122.png" alt="historico">
+      </button>
+      <div class="btnLixo hidden" >
+        <button class="btnLixo2 " >
+          <img class="lixeira "  src="https://png.pngtree.com/png-vector/20240917/ourlarge/pngtree-trash-can-icon-png-image_13851979.png" alt="limpar historico">
+        </button>
+      </div>
         <h2>feito por LUCAS SCHEFFER</h2>
 
         <button id="mudarTema"  class="btntema">
@@ -19,6 +28,7 @@
     <form class="form" onsubmit="buscar_cep(event)">
       <div class="user-input">
         <label for="cep">cep</label>
+        <p class="erro hidden">CEP Invalido</p>
         <input type="number" id="cep" name="cep" placeholder="Digite o CEP">
         <button type="submit">pesquisar</button>
         <button type="reset" onclick="hideForm()">limpar</button>
@@ -34,11 +44,15 @@
         <input readonly type="text" id="cidade">
       </div>
     </form>
+
+     <div class="divHistorico hidden ">
+     <ul class="listCEP">
+     </ul>
+    </div>
+
     
     <script src="index.js"></script>
   </body>
   
   
 </Html>
-
-
